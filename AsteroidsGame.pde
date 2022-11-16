@@ -16,14 +16,13 @@ public void draw()
   for(int i = 0; i < Hao.length; i++){
     Hao[i].show();
   }
-  
- public void keyPressed(){
+ 
      if(keyPressed){
       if(key == 'a'){
-        MHT.turn(-20);
+        MHT.turn(-15);
       }
       if(key == 'd'){
-        MHT.turn(20);
+        MHT.turn(15);
       }
       if(key == 'w'){
         MHT.accelerate(0.2);
@@ -35,8 +34,6 @@ public void draw()
       //  MHT.hyperspace();
       //}
       }
-
-  }
 }
 
 
