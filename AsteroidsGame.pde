@@ -19,10 +19,10 @@ public void draw()
  
      if(keyPressed){
       if(key == 'a'){
-        MHT.turn(-10);
+        MHT.turn(-7);
       }
       if(key == 'd'){
-        MHT.turn(10);
+        MHT.turn(7);
       }
       if(key == 'w'){
         MHT.accelerate(0.1);
@@ -30,10 +30,10 @@ public void draw()
       if(key == 's'){
         MHT.accelerate(-0.1);
       }
-      //if(key == 'h'){
-      //  MHT.hyperspace();
-      //}
+      if(key == 'r'){
+        MHT.hyperSpace();
       }
+     }
 }
 
 
