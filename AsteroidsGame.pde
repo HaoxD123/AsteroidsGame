@@ -19,16 +19,16 @@ public void draw()
  
      if(keyPressed){
       if(key == 'a'){
-        MHT.turn(-15);
+        MHT.turn(-10);
       }
       if(key == 'd'){
-        MHT.turn(15);
+        MHT.turn(10);
       }
       if(key == 'w'){
-        MHT.accelerate(0.2);
+        MHT.accelerate(0.1);
       }
       if(key == 's'){
-        MHT.accelerate(-0.2);
+        MHT.accelerate(-0.1);
       }
       //if(key == 'h'){
       //  MHT.hyperspace();
