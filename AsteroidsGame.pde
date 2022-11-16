@@ -21,10 +21,10 @@ public void draw()
 public void keyPressed(){
    if(keyPressed){
     if(key == 'a'){
-      MHT.turn(-10);
+      MHT.turn(-20);
     }
     if(key == 'd'){
-      MHT.turn(10);
+      MHT.turn(20);
     }
     if(key == 'w'){
       MHT.accelerate(0.2);
