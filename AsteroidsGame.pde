@@ -1,6 +1,6 @@
 //your variable declarations here
 Spaceship MHT = new Spaceship();
-Star [] Hao = new Star[300];
+Star [] Hao = new Star[400];
 public void setup() 
 {
   size(800,800);
