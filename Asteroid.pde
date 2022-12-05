@@ -16,11 +16,11 @@ class Asteroid extends Floater{
     yCorners[4] = (int)(Math.random()*5)+5;
     xCorners[5] = (int)(Math.random()*5)-8;
     yCorners[5] = (int)(Math.random()*6)-3;
-    myColor = color(164,42,42);
-    myCenterX = (int)(Math.random()*500);
-    myCenterY = (int)(Math.random()*500);
-    myXspeed = (int)(Math.random()*3)-1;
-    myYspeed = (int)(Math.random()*3)-1;
+    myColor = color(200,45,105);
+    myCenterX = (int)(Math.random()*800);
+    myCenterY = (int)(Math.random()*800);
+    myXspeed = (int)(Math.random()*2)-1;
+    myYspeed = (int)(Math.random()*2)-1;
     myPointDirection = 0;
   }
   public void move(){
@@ -35,7 +35,7 @@ class Asteroid extends Floater{
     myCenterY += myYspeed;     
 
     //wrap around screen    
-    if(myCenterX >width)
+    if(myCenterX > width)
     {     
       myCenterX = 0;    
     }    
