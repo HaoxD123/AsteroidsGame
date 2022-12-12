@@ -1,6 +1,6 @@
 class Asteroid extends Floater{
   double rotSpeed = (int)(Math.random()*5)+1;
-  Asteroid(){
+  public Asteroid(){
     corners = 6;
     xCorners = new int[corners];
     yCorners = new int[corners];
@@ -24,7 +24,6 @@ class Asteroid extends Floater{
     myPointDirection = 0;
   }
   public void move(){
-        //change the x and y coordinates by myXspeed and myYspeed
         if(myXspeed == 0){
           myXspeed++;
         }
@@ -33,8 +32,7 @@ class Asteroid extends Floater{
         }
     myCenterX += myXspeed;    
     myCenterY += myYspeed;     
-
-    //wrap around screen    
+  
     if(myCenterX > width)
     {     
       myCenterX = 0;    
@@ -54,10 +52,7 @@ class Asteroid extends Floater{
     }   
     myPointDirection += rotSpeed;
   }   
-  public float getX(){
-    return((float)(myCenterX));
-  }
-  public float getY(){
-    return((float)(myCenterY));
-  }
+  public double getPointDirection(){return myPointDirection;}
+  public double getX(){return myCenterX;}
+  public double getY(){return myCenterY;}
 }
